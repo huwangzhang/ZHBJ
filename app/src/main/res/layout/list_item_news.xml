@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_news"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="5dp"
+        android:background="#a000"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/image_demo"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_news"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="fdsafadsfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff;hdflkahsdkljhg"
+        android:textColor="#333"
+        android:textSize="18sp"/> <!-- 裁剪 -->
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@+id/iv_news"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="2017-6-8 10:29"
+        android:textColor="#8000"
+        android:textSize="16sp"/>
+</RelativeLayout>
