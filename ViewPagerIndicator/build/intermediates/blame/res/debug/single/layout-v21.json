@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\AndroidStudioProjects\\ZHBJ\\ViewPagerIndicator\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "D:\\AVD\\.android\\build-cache\\44fb4611c7da5431f807bc601ee7356760746b24\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\ZHBJ\\ViewPagerIndicator\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "D:\\AVD\\.android\\build-cache\\44fb4611c7da5431f807bc601ee7356760746b24\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\ZHBJ\\ViewPagerIndicator\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "D:\\AVD\\.android\\build-cache\\44fb4611c7da5431f807bc601ee7356760746b24\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\ZHBJ\\ViewPagerIndicator\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "D:\\AVD\\.android\\build-cache\\44fb4611c7da5431f807bc601ee7356760746b24\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]
