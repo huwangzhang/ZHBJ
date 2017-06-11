@@ -17,9 +17,9 @@ import com.hwz.zhbj.R;
 import com.hwz.zhbj.domain.PhotosBean;
 import com.hwz.zhbj.global.Constants;
 import com.hwz.zhbj.util.CacheUtils;
+import com.hwz.zhbj.util.MyBitmapUtils;
 import com.hwz.zhbj.util.URLUtils;
 import com.hwz.zhbj.view.BaseMenuDetailPager;
-import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.exception.HttpException;
@@ -115,11 +115,13 @@ public class PhotosMenuDetailPager extends BaseMenuDetailPager {
     }
 
     class PhotosAdapter extends BaseAdapter {
-        private BitmapUtils mBitmapUtils;
+        //        private BitmapUtils mBitmapUtils;
+        private MyBitmapUtils mBitmapUtils;
 
         public PhotosAdapter() {
-            mBitmapUtils = new BitmapUtils(mActivity);
-            mBitmapUtils.configDefaultLoadingImage(R.mipmap.pic_item_list_default);
+//            mBitmapUtils = new BitmapUtils(mActivity);
+//            mBitmapUtils.configDefaultLoadingImage(R.mipmap.pic_item_list_default);
+            mBitmapUtils = new MyBitmapUtils();
         }
 
         @Override

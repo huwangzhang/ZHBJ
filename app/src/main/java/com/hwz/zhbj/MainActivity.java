@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.hwz.zhbj.fragment.ContentFragment;
 import com.hwz.zhbj.fragment.LeftMenuFragment;
@@ -49,7 +50,9 @@ public class MainActivity extends FragmentActivity {
         // Setup the primary menu
 //        View primaryMenu = new View(this);
         View primaryMenu = View.inflate(ZHBJApplication.getContext(), R.layout.left_menu, null);
-        slideMenu.addView(primaryMenu, new SlideMenu.LayoutParams(350,
+        WindowManager manager = getWindowManager();
+        int width = manager.getDefaultDisplay().getWidth();
+        slideMenu.addView(primaryMenu, new SlideMenu.LayoutParams(width * 300 / 768,
                 SlideMenu.LayoutParams.MATCH_PARENT, SlideMenu.LayoutParams.ROLE_PRIMARY_MENU));
 
         slideMenu.setPrimaryShadowWidth(30); // 滑动阴影
@@ -57,14 +60,12 @@ public class MainActivity extends FragmentActivity {
 
     }
 
-    public ContentFragment getContentFragment()
-    {
-        return (ContentFragment)getSupportFragmentManager().findFragmentByTag(FRAG_CONTENT);
+    public ContentFragment getContentFragment() {
+        return (ContentFragment) getSupportFragmentManager().findFragmentByTag(FRAG_CONTENT);
     }
 
-    public LeftMenuFragment getLeftMenuFragment()
-    {
-        return (LeftMenuFragment)getSupportFragmentManager().findFragmentByTag(FRAG_MENU_LEFT);
+    public LeftMenuFragment getLeftMenuFragment() {
+        return (LeftMenuFragment) getSupportFragmentManager().findFragmentByTag(FRAG_MENU_LEFT);
     }
 
     public SlideMenu getSlideMenu() {
